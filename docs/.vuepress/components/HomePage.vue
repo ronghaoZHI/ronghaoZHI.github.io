@@ -148,7 +148,7 @@ export default {
   }
   .footer {
     position: relative;
-    font-size: 0.5vw;
+    font-size: 14px;
     line-height: 0.5;
   }
 </style>
