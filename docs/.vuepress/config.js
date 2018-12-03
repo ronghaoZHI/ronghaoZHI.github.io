@@ -1,5 +1,5 @@
 module.exports = {
-  title: '博客',
+  title: '主页',
   head: [
     ['link', { rel: 'icon', href: './logo.png' }]
   ],
@@ -16,9 +16,9 @@ module.exports = {
       "/article/": [
         {
           title: '文章',
-          collapsable: false,
+          collapsable: true,
           children: [
-            '/',
+            '/article/DOME',
           ]
       }]
     }
