@@ -2,7 +2,7 @@
 set -e
 
 # 生成静态文件
-npm run build
+npm run build || exit 1
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
@@ -13,8 +13,7 @@ cd docs/.vuepress/dist
 git init
 git add -A
 git commit -m 'build release'
-
 # 发布到 https://<USERNAME>.github.io
-git push -f git@github.com:ronghaoZHI/ronghaoZHI.github.io.git release
+git push -f git@github.com:ronghaoZHI/ronghaoZHI.github.io.git master:release
 
 cd -
