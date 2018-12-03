@@ -6,7 +6,8 @@
       <p class="item.describe">{{item.describe}}</p>
       <span class="itme-schema">{{item.schema}}</span>
       <span class="item-time">{{item.time}}</span>
-      <a class="item-look" :href="$withBase(item.url)">查看全文</a>
+      <a class="item-look" v-if="item.url.indexOf('://')===-1" :href="item.url">查看全文</a>
+      <a class="item-look" v-else :target="item.url" :href="item.url">查看全文</a>
     </section>
   </div>
 </template>
@@ -28,5 +29,7 @@ export default {
   }
   .article .item {
     margin-top: 20px;
+  }
+  .item-look {
   }
 </style>

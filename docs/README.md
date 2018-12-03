@@ -1,7 +1,7 @@
 ---
 layout: HomePage
 head: ronghaoZHI
-describe: 待业码农一只  求一份web前端工作
+describe: 待业码农一只 __ 求一份web前端工作
 avatar: /logo.png
 wxQR: /img/wxQR.png
 socials:
