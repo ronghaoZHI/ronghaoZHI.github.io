@@ -1,5 +1,5 @@
 ---
 layout: About
-title: about me
+title: About me
 info: 待写...
 ---
