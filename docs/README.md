@@ -1,6 +1,6 @@
 ---
 layout: HomePage
-head: ronghaoZHI
+head: RonghaoZHI
 describe: 待业码农一只 __ 求一份web前端工作
 avatar: /logo.png
 wxQR: /img/wxQR.png

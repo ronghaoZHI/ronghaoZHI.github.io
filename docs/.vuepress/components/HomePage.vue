@@ -31,7 +31,7 @@
       </div>
     </div>
      <div class="footer">
-        Disigned by ronghaoZHI
+        Disigned by RonghaoZHI
       </div>
   </div>
 </template>
