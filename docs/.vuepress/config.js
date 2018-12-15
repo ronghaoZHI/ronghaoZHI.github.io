@@ -18,6 +18,7 @@ module.exports = {
           title: '文章',
           collapsable: true,
           children: [
+            '/article/2018-12-12',
             '/article/2018-12-04',
             '/article/2018-12',
             '/article/2018-11',

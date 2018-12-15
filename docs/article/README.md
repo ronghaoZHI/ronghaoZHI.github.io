@@ -1,11 +1,16 @@
 ---
 layout: Article
 content:
-# - title: vue-press实践
-#   describe: ''
-#   schema: ''
-#   time: 
-#   url: ./2018-12-04.html
+- title: DNS解析顺序
+  describe: ''
+  schema: ''
+  time: ''
+  url: ./2018-12-12.html
+- title: vue-press实践
+  describe: ''
+  schema: ''
+  time: 
+  url: ./2018-12-04.html
 - title: 算法图解note
   describe: ''
   schema: ''
