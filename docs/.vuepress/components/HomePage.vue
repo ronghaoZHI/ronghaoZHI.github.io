@@ -52,8 +52,7 @@ export default {
   methods: {
     init() {
       const lis = Array.from(document.getElementsByClassName('skill-li'))
-      const len=lis.length
-      this.colors.length = len
+      this.colors.length = lis.length
       this.colors = this.arrRand(this.colors)
       lis.forEach((li,index)=>{
         li.style.backgroundColor = this.colors[index]
