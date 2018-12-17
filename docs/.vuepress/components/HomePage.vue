@@ -53,10 +53,11 @@ export default {
   },
   mounted() {
     this.init()
-    !this.timer && (this.timer = window.setInterval(this.init, 3000))
+    !this.timer && (this.timer = setInterval(this.init, 3000))
   },
   methods: {
     init() {
+      this.timer = null
       const lis = Array.from(document.getElementsByClassName('skill-li'))
       this.colors.length = lis.length
       this.colors = this.arrRand(this.colors)
@@ -80,8 +81,8 @@ export default {
       return this.$page.frontmatter;
     }
   },
-  breforeDestory(){
-   this.timer && window.clearInterval(this.timer)
+  beforeDestroy() {
+    this.timer && clearTimeout(this.timer)
   },
 }
 </script>
