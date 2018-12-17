@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import tagAction from './util.js'
+import { tagAction } from './util.js'
 export default {
   mounted() {
     this.init()

@@ -11,13 +11,13 @@ socials:
   link: 'mailto:zhironghao111@gmail.com'
 skill: 
 - title: html/css
-  percent: 0.6
+  percent: 0.7
 - title: javascript
+  percent: 0.7
+- title: Vue
   percent: 0.7
 - title: node.js
   percent: 0.6
-- title: Vue
-  percent: 0.7
 - title: React
   percent: 0.5
 ---

@@ -1,4 +1,8 @@
-export default function tagsCloud(id) {
+export const getLists = function() {
+
+}
+
+export const tagAction = function(id) {
 	var radius = 80;
 	var dtr = Math.PI/180;
 	var d=300;

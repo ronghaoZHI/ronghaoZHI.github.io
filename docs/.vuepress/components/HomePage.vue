@@ -2,8 +2,10 @@
   <div class="home">
     <div class="wrap">
       <div class="avatar">
+        <a href='/about/'>
         <img class="img1" :src="$withBase(data.wxQR)" alt="">
-        <img class="img2" :src="$withBase(data.avatar)" alt="">
+        <!-- <img class="img2" :src="$withBase(data.avatar)" alt=""> -->
+        </a>
       </div>
       <div class="head">
         <span>
@@ -18,7 +20,11 @@
       <div class="skill">
         <p>技术图谱</p>
         <ul class="skill-ul" ref="skill">
-          <li class="skill-li" v-for="item in data.skill" :percent="item.percent"><span>{{item.title}}</span></li>
+          <li class="skill-li" v-for="item in data.skill">
+            <div :style="{ width: item.percent*100+'%' }" :percent = item.percent>
+              <span>{{item.title}}</span>
+            </div>
+          </li>
         </ul>
       </div>
       <div class="socials">
@@ -47,15 +53,16 @@ export default {
   },
   mounted() {
     this.init()
-    !this.timer && window.setInterval(this.init, 3000) 
+    !this.timer && (this.timer = window.setInterval(this.init, 3000))
   },
   methods: {
     init() {
       const lis = Array.from(document.getElementsByClassName('skill-li'))
+      console.log(lis[0].children[0])
       this.colors.length = lis.length
       this.colors = this.arrRand(this.colors)
       lis.forEach((li,index)=>{
-        li.style.backgroundColor = this.colors[index]
+        li.children[0].style.backgroundColor = this.colors[index]
       })
     },
     arrRand(arr){
@@ -71,15 +78,16 @@ export default {
   },
   computed: {
     data() {
+      console.log(this.$page.frontmatter)
       return this.$page.frontmatter;
     }
   },
   breforeDestory(){
-    window.clearInterval(this.timer)
+   this.timer && window.clearInterval(this.timer)
   },
 }
 </script>
-<style>
+<style lang="less">
   .home {
     position: relative;
     margin: auto;
@@ -126,11 +134,18 @@ export default {
     font-weight: bold;
     width: 100%;
     margin: auto;
-  }
-  .skill-ul li {
-    color: antiquewhite;
-    list-style-type: none;
-    margin-top: 3px; 
+
+    ul li {
+      color: antiquewhite;
+      background-color: #67658430;
+      list-style-type: none;
+      margin-top: 3px; 
+      opacity: 0.9;
+      &:hover {
+        transform: scale(1.05, 1.1);
+        opacity: 1;
+      }
+    }
   }
   .socials {
     width: 50%;
