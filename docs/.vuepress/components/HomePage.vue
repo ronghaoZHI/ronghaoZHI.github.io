@@ -58,7 +58,6 @@ export default {
   methods: {
     init() {
       const lis = Array.from(document.getElementsByClassName('skill-li'))
-      console.log(lis[0].children[0])
       this.colors.length = lis.length
       this.colors = this.arrRand(this.colors)
       lis.forEach((li,index)=>{
@@ -78,7 +77,6 @@ export default {
   },
   computed: {
     data() {
-      console.log(this.$page.frontmatter)
       return this.$page.frontmatter;
     }
   },
