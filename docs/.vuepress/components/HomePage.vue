@@ -114,7 +114,7 @@ export default {
     animation: xx;
   }
   .img2:hover {
-    opacity: 0;;
+    opacity: 0;
   }
   .head {
     width: 100%;
@@ -141,10 +141,15 @@ export default {
       margin-top: 3px; 
       opacity: 0.9;
       &:hover {
-        transform: scale(1.05, 1.1);
+        animation: scale 2.5s infinite;
         opacity: 1;
       }
     }
+  }
+  @keyframes scale {
+    0% { transform: scale(1.05, 1.05); }
+    50% { transform: scale(1.10, 1.35); }
+    100% { transform: scale(1.05, 1.05); }
   }
   .socials {
     width: 50%;

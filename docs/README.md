@@ -1,7 +1,7 @@
 ---
 layout: HomePage
 head: RonghaoZHI
-describe: 待业码农一只 __ 求一份web前端工作
+describe: 求知若渴  虚心若愚
 avatar: /logo.png
 wxQR: /img/wxQR.png
 socials:
@@ -10,16 +10,16 @@ socials:
 - title: gmail
   link: 'mailto:zhironghao111@gmail.com'
 skill: 
-- title: html/css
-  percent: 0.7
 - title: javascript
-  percent: 0.7
+  percent: 0.79
+- title: html/css
+  percent: 0.77
 - title: Vue
-  percent: 0.7
+  percent: 0.77
 - title: node.js
-  percent: 0.6
+  percent: 0.7
 - title: React
-  percent: 0.5
+  percent: 0.6
 ---
 
 [Demo地址](http://zhironghao.win)
