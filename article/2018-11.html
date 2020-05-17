@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>web worker | Blog</title>
+    <meta name="description" content="">
+    <link rel="icon" href="./logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.2ce76bed.css" as="style"><link rel="preload" href="/assets/js/app.e43a488d.js" as="script"><link rel="preload" href="/assets/js/9.936eacaf.js" as="script"><link rel="prefetch" href="/assets/js/10.92dee6d6.js"><link rel="prefetch" href="/assets/js/11.a3398939.js"><link rel="prefetch" href="/assets/js/12.6bda2001.js"><link rel="prefetch" href="/assets/js/13.66a60d8f.js"><link rel="prefetch" href="/assets/js/14.8b4b29a7.js"><link rel="prefetch" href="/assets/js/15.ded6ac35.js"><link rel="prefetch" href="/assets/js/16.749336eb.js"><link rel="prefetch" href="/assets/js/2.054f0a9e.js"><link rel="prefetch" href="/assets/js/3.9ebb8673.js"><link rel="prefetch" href="/assets/js/4.bcc826b4.js"><link rel="prefetch" href="/assets/js/5.8ede6b42.js"><link rel="prefetch" href="/assets/js/6.22646ccf.js"><link rel="prefetch" href="/assets/js/7.16e75097.js"><link rel="prefetch" href="/assets/js/8.3b583c10.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2ce76bed.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/article/" class="nav-link router-link-active">Article</a></div><div class="nav-item"><a href="/about/" class="nav-link">AboutMe</a></div><div class="nav-item"><a href="https://github.com/ronghaoZHI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/myLove/" class="nav-link"></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/article/" class="nav-link router-link-active">Article</a></div><div class="nav-item"><a href="/about/" class="nav-link">AboutMe</a></div><div class="nav-item"><a href="https://github.com/ronghaoZHI" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/myLove/" class="nav-link"></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>文章</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/article/2018-12-12.html" class="sidebar-link">DNS解析顺序</a></li><li><a href="/article/2018-12-04.html" class="sidebar-link">VuePress 实践</a></li><li><a href="/article/2018-12.html" class="sidebar-link">算法图解</a></li><li><a href="/article/2018-11.html" class="active sidebar-link">web worker</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="web-worker">web worker</h1> <h3 id="使用场景">使用场景</h3> <h5 id="_1、数学运算">1、数学运算</h5> <p>Web Worker最简单的应用就是用来做后台计算，对CPU密集型的场景再适合不过了。</p> <h5 id="_2、图像处理">2、图像处理</h5> <p>通过使用从 canvas 中获取的数据，可以把图像分割成几个不同的区域并且把它们推送给并行的不同Workers来做计算，对图像进行像素级的处理，再把处理完成的图像数据返回给主页面。</p> <h5 id="_3、大数据的处理">3、大数据的处理</h5> <p>目前mvvm框架越来越普及，基于数据驱动的开发模式也越愈发流行，未来大数据的处理也可能转向到前台，这时，将大数据的处理交给在Web Worker也是上上之策了吧。</p> <hr> <h3 id="简介">简介</h3> <h5 id="_1-生成一个专用worker">1 生成一个专用worker</h5> <p>创建一个新的worker很简单。你需要做的是调用Worker() 的构造器，指定一个脚本的URI来执行worker线程（main.js）：</p> <div class="language- extra-class"><pre class="language-text"><code>var myWorker = new Worker('worker.js');
+
+</code></pre></div><h5 id="_2-专用worker中消息的接收和发送">2 专用worker中消息的接收和发送</h5> <p>workers通过postMessage() 方法和onmessage事件处理函数生效。向一个worker发送消息需要这样做（main.js）</p> <div class="language- extra-class"><pre class="language-text"><code>first.onchange = function() {
+  myWorker.postMessage([first.value,second.value]);
+  console.log('Message posted to worker');
+}
+
+second.onchange = function() {
+  myWorker.postMessage([first.value,second.value]);
+  console.log('Message posted to worker');
+}
+</code></pre></div><p>在worker中接收到消息后，我们可以写这样一个事件处理函数代码作为响应（worker.js）：</p> <div class="language- extra-class"><pre class="language-text"><code>onmessage = function(e) {
+  console.log('Message received from main script');
+  var workerResult = 'Result: ' + (e.data[0] * e.data[1]);
+  console.log('Posting message back to main script');
+  postMessage(workerResult);
+}
+</code></pre></div><p>onmessage处理函数允许在任何时刻，一旦接收到消息就可以执行一些代码，代码中消息本身作为事件的data属性进行使用。</p> <p>回到主线程，我们再次使用onmessage以响应worker回传的消息：</p> <div class="language- extra-class"><pre class="language-text"><code>myWorker.onmessage = function(e) {
+  result.textContent = e.data;
+  console.log('Message received from worker');
+}
+</code></pre></div><h5 id="_3-终止worker">3 终止worker</h5> <p>如果需要从主线程中立刻终止一个运行中的worker，可以调用worker的terminate 方法：</p> <div class="language- extra-class"><pre class="language-text"><code>myWorker.terminate();
+</code></pre></div><p>而在worker线程中，workers 也可以调用自己的 close  方法进行关闭：</p> <div class="language- extra-class"><pre class="language-text"><code>close();
+</code></pre></div><hr> <div class="language- extra-class"><pre class="language-text"><code>创建内嵌的worker
+
+var myTask = `
+    var i = 0;
+    function timedCount(){
+        i +=1;
+        postMessage(i);
+        setTimeout(timedCount, 1000);
+    }
+    timedCount();
+`;
+
+var blob = new Blob([myTask]);
+var myWorker = new Worker(window.URL.createObjectURL(blob));
+</code></pre></div><h4 id="像使用promise-一样使用-web-worker">像使用Promise 一样使用 web-worker</h4> <p>可参考  <a href="https://github.com/israelss/simple-web-worker/tree/master/src" target="_blank" rel="noopener noreferrer">simple-web-worker<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/article/2018-12.html" class="prev">
+          算法图解
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/9.936eacaf.js" defer></script><script src="/assets/js/app.e43a488d.js" defer></script>
+  </body>
+</html>
